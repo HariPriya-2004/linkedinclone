@@ -53,9 +53,10 @@
             width: 100vw;
             margin-top: 50px;
             padding: 7px;
-
             position: relative;
             z-index: -5;
+
+            
 
         }
 
@@ -80,7 +81,7 @@
 
         .leftone {
             width: 100%;
-            height: 265px;
+             height: 265px; 
             background-color: white;
             border-radius: 7px;
             margin: 20px 0;
@@ -94,6 +95,7 @@
             border-radius: 7px;
             margin: 20px 0;
             border: 1px solid rgba(128, 128, 128, 0.571);
+           
         }
 
         .leftthree {
@@ -268,7 +270,7 @@
             margin: 20px 0;
             border: 1px solid rgba(128, 128, 128, 0.571);
             position: sticky;
-            top: 100px;
+            top: 0;
         }
 
         .rishita {
@@ -402,8 +404,8 @@
             /* margin-right: 100px; */
             position: relative;
             bottom: 15px;
+            }
         
-        }
         .middletwo{
             height:auto;
         }
@@ -423,13 +425,32 @@
         }
 
         @media(max-width:800px) {
-            .right-1 {
+            .section-1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            
+               
+            .left-1{
+                    min-width: 80vw;
+                    min-height:90vh;
+                }
+                .left-1{
+                    .pic{
+                        display:none;
+                    }
+                    .text{
+                        display: none;
+                    }
+                }
+            .rightone {
                 display: none;
             }
 
-            .left-1 {
-                display: none;
-            }
+            
 
             .middle-1 {
                 width: 80vw;
@@ -470,12 +491,26 @@
         .comments1{
            margin-left: 40px;
         }
-        .lefttwo{
-            height: auto;
-        }
+        
     }
         @media(max-width:500px) {
-
+            
+            
+            
+                .left-1{
+                    min-width: 80vw;
+                    min-height:90vh;
+                }
+                .left-1{
+                    .pic{
+                        display:none;
+                    }
+                    .text{
+                        display: none;
+                    }
+                }
+            
+            
             .middletwo{
             height:auto;
         }
@@ -485,9 +520,7 @@
         .comments1{
            margin-left: 40px;
         }
-        .lefttwo{
-            height:auto
-        }
+        
         
         
 
@@ -839,12 +872,6 @@
             
         </div>
     </div>
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
